@@ -75,3 +75,21 @@ class ProjectHoverEffect {
 document.addEventListener('DOMContentLoaded', () => {
     new ProjectHoverEffect();
 });
+
+// ✅ Project Filter Function
+function filterProjects(type, event) {
+    // remove active class from all buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    
+    // add active class to the clicked button
+    if (event) event.target.classList.add('active');
+
+    // loop through all projects
+    document.querySelectorAll('.project-item').forEach(item => {
+        if (item.classList.contains(type)) {
+            item.style.display = "";   // ✅ resets to CSS default (flex/grid/etc.)
+        } else {
+            item.style.display = "none"; 
+        }
+    });
+}
