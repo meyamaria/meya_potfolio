@@ -838,3 +838,24 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .project-filters {
+        text-align: center;
+        margin: 20px 0;
+        }
+
+        .filter-btn {
+        background: #0D1117; /* primary */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+        background: #00B4D8; /* accent */
+        }
