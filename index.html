@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/cursor.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     
     <!-- Scripts -->
     <script src="scripts/loading.js" defer></script>
@@ -76,8 +77,8 @@
         <h2 class="about-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a tech enthusiast currently pursuing my B.Tech at Tech Institute of Science and Technology — where I juggle between web development, ML, and UI/UX design.</p>
-                <p>My passion lies in creating thoughtful, user-friendly tech solutions. Whether it's crafting elegant websites, designing intuitive interfaces, or exploring machine learning, I find joy in bringing ideas to life through code.</p>
+                <p>I'm a tech enthusiast currently pursuing my B.Tech at Toc H Institute of Science and Technology — where I juggle between web development, ML, and UI/UX design.</p>
+                <p>My passion lies in creating interesting, user-friendly tech solutions. Whether it's crafting elegant websites, designing intuitive interfaces, or exploring amusing tech sites, I find tinkering with a variety of stuff enjoyable.</p>
             </div>
         </div>
     </section>
@@ -85,6 +86,13 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section section">
         <h2 class="section-title">Featured Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+            <button class="filter-btn active" onclick="filterProjects('web', event)">Web</button>
+            <button class="filter-btn" onclick="filterProjects('uiux', event)">UI/UX</button>
+        </div>
+
         <div class="projects-container">
 
             <!-- project details -->
@@ -109,9 +117,9 @@
                                 <polyline points="15 3 21 3 21 9"></polyline>
                                 <line x1="10" y1="14" x2="21" y2="3"></line>
                             </svg>
-                            Live Demo
+                            Demo
                         </a>
-                        <a href="https://github.com/meyamaria/versavogue.git" target="_blank" class="project-link">
+                        <a href="https://github.com/meyamaria/projectfolder/tree/main/meya%20maria%20tony%20project/versavogue%20web" target="_blank" class="project-link">
                             <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
@@ -257,6 +265,29 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 🎨 UI/UX PROJECTS -->
+        <div class="project-item uiux" style="display:none;">
+            <div class="project-image">
+                <img src="assets/figma1.png" alt="Figma Project Example">
+                <div class="project-overlay">
+                    <div class="project-tech-stack">
+                        <span>Figma</span>
+                        <span>Prototype</span>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Travel App UI</h3>
+                <p>A Figma prototype for a solo-travel planning app with an intuitive and joyful design theme.</p>
+                <div class="project-links">
+                    <a href="https://www.figma.com/file/xxxx" target="_blank" class="project-link">View Prototype</a>
+                </div>
+            </div>
+        </div>
+
+
 
         </div>
     </section>
